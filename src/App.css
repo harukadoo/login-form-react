@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-form__container{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.login-form__title{
+    font-size: 42px;
 }
 
-.App-link {
-  color: #61dafb;
+.login-form__inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-form__inputs input{
+    font-size: 20px;
+    padding: 3px 10px;
+    border: 2px solid black;
+}
+
+.login-form__btn, .homepage__btn{
+    margin-top: 1vh;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 3px 10px;
+    border: 2px solid black;
+    font-weight: 500;
+}
+
+
+.homepage__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+
+.homepage__greeting{
+    font-size: 24px;
 }
